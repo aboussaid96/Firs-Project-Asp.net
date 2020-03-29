@@ -16,6 +16,7 @@ public partial class Schedule01 : System.Web.UI.Page
 
         dttable29=cn.AfficherMessage("29/03/2020");
 
+        dttable30 = cn.AfficherMessage("30/03/2020");
         repeter29.DataSource = dttable29;
         repeter29.DataBind();
     }
