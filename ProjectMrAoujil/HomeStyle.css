@@ -1,0 +1,192 @@
+﻿
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+
+
+/*style for Nav bar--------------------------------*/
+.navbar {
+    margin-bottom: 0;
+    background-color: #1B262C;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #1B262C !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+/*style for Nav bar--------------------------------*/
+
+
+
+.home {
+    height: 600px;
+    background-image: url('image/back-golf.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home .home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.home .home-title {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.home .home-desc {
+    color: #fff;
+    font-size: 16px;
+}
+
+
+.home .button {
+    background-color: #0f4c75;
+    color: #fff;
+    width: 150px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.color_lettre {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+
+
+/*style for Nav bar--------------------------------*/
+.navbar {
+    margin-bottom: 0;
+    background-color: #1B262C;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #1B262C !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+/*style for Nav bar--------------------------------*/
+/*home----------------------------*/
+.home {
+    height: 600px;
+    background-image: url('image/back-golf.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home .home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.home .home-title {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.home .home-desc {
+    color: #fff;
+    font-size: 16px;
+}
+
+
+.home .button {
+    background-color: #0f4c75;
+    color: #fff;
+    width: 150px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media(max-width:575px) {
+    .home .home-title {
+        font-size: 22px;
+    }
+
+    .home .button {
+        margin-bottom: 10px;
+    }
+}
+/*----/home-------------*/
+
+/*About*/
+
+.section-header .section-title {
+    font-size: 40px;
+}
+
+.section-header .line {
+    background-color: #888;
+    width: 150px;
+    height: 4px;
+    margin: auto;
+}
+
+.section-header .line span {
+    display: block;
+    background-color: yellowgreen;
+    width: 100px;
+    height: 4px;
+    margin: auto;
+    position: relative;
+    bottom: 0.5px;
+}
+
+.section-header p {
+    width: 50%;
+    color: #888;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+
+.about .about-img img {
+    width: 100%;
+}
+
+/*----------/About Info et img*/
+
+/*---------------------team style--------------------*/

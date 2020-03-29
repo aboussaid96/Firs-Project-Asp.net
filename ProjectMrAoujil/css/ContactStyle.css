@@ -1,0 +1,10 @@
+﻿
+
+.wrapper .contact_form {
+    height: 606px;
+}
+
+.wrapper .contact_form .btn_send {
+    position: relative;
+    top: 60px;
+}

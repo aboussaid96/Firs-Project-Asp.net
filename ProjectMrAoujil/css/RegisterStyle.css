@@ -1,0 +1,165 @@
+﻿@font-face {
+    font-family: "Muli-Regular";
+    src: url("../fonts/muli/Muli-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Muli-SemiBold";
+    src: url("../fonts/muli/Muli-SemiBold.ttf");
+}
+/* h1 joob place holder home*/
+.title_job {
+    position: relative;
+    color:crimson;
+    right: 308px;
+    margin: 44px 91px;
+}
+
+.inner {
+    width: 435px;
+    background-color: white;
+    padding-bottom: 35px;
+    /*------
+    position: absolute;
+    top: -217px;
+    margin-top:20px;*/
+}
+
+
+h3 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: "Muli-SemiBold";
+    color: #333;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 33px;
+    margin-top: 20px;
+}
+
+.form-holder {
+    position: relative;
+    margin-bottom: 21px;
+}
+
+.form-holder span {
+    position: absolute;
+    left: 340px; 
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #333;
+    top:43px;
+    width: 7px;
+}
+
+.form-holder span.erreurlabel {
+    position: initial;
+    margin-left: 22px;
+    color:red;
+}
+
+.form-holder span.lnr-lock {
+    left: 2px;
+}
+
+.form-control {
+   
+    border-bottom: 1px solid #e6e6e6;
+    display: block;
+    background: none;
+    padding: 3px 42px 0px;
+    color: #666;
+    font-family: "Muli-SemiBold";
+    font-size: 16px;
+    border-left-style: none;
+    border-left-color: inherit;
+    border-left-width: medium;
+    border-right-style: none;
+    border-right-color: inherit;
+    border-right-width: medium;
+    border-top-style: none;
+    border-top-color: inherit;
+    border-top-width: medium;
+    }
+
+
+.form-control:focus {
+    border-bottom: 1px solid #accffe;
+}
+
+.button_registre {
+    border: none;
+    width: 100%;
+    height: 49px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+   
+    color: #fff;
+    /*text-transform: uppercase;*/
+    font-family: "Muli-SemiBold";
+    font-size: 30px;
+    letter-spacing: 2px;
+   
+    width: 400px;
+    margin: -2px auto;
+}
+
+
+.button_registre:after {
+    transition-delay: 0.2s;
+}
+
+.button_registre:hover:before, .button_registre:hover:after {
+    transform: translate(0, 0);
+}
+
+@media (max-width: 991px) {
+    .inner {
+        width: 400px;
+        left: 4%;
+    }
+}
+
+@media (max-width: 767px) {
+    .inner {
+        width: 100%;
+        left: 0;
+    }
+}
+.wrapper {
+    background-repeat: no-repeat;
+    background-image: url('../image/back-golf.jpg');
+    background-size: cover;
+    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*width: 100%;*/
+}
+/*icon */
+.form-holder span.icon {
+    position: relative;
+    left: 14px;
+    top: 35px;
+    width: 7px;
+    height: 14px;
+}
+.form-holder span.upload_icon {
+    top: 37px;
+}
+
+/*for space entre ligne*/
+.form_regester {
+    position: relative;
+    bottom: 24px;
+}
+
+
+
+ 
+
+
