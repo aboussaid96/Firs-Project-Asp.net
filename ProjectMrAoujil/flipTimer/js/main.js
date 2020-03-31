@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 2) + 1;
 
   // Set up FlipDown
-    var flipdown = new FlipDown(1585612800)
+    var flipdown = new FlipDown(1586476800)
 
     // Start the countdown
     .start()

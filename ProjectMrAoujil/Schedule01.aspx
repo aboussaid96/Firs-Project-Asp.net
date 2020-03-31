@@ -26,30 +26,79 @@
                     <li><a data-toggle="pill" href="#time3">01/04</a></li>
                 </ul>
 
-                <div class="tab-content">
+                <div class="row tab-content">
                     <%-- <div id="home" class="tab-pane fade in active">
                         <h3>HOME</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>--%>
                     <div id="time1" class="active tab-pane fade in active">
-                        <asp:Repeater ID="repeter29" runat="server">
+                        <asp:repeater id="repeter29" runat="server">
                             <ItemTemplate>
-                                <h1><%# Eval("name_contact")%></h1>
+                                <div class="col-sm-12 col-md-12 message_style">
+                                    <h4 class="title_message"><%# Eval("name_contact")%></h4>
+                                    <p><%#Eval("message_contact")%></p>
+                                    <div class="info_message">                                  
+                                        <span class="glyphicon glyphicon-time"></span><%#Eval("Date_contact")%>&nbsp;&nbsp;
+                                        <span class="glyphicon glyphicon-envelope"></span><%#Eval("email_contact")%>
+
+                                    </div>
+                                </div>
                             </ItemTemplate>
-                        </asp:Repeater>
+                        </asp:repeater>
                     </div>
                     <div id="time2" class="tab-pane fade">
-                        <h3>Menu 2</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        <asp:repeater id="Repeater30" runat="server">
+                            <ItemTemplate>
+                                <div class="col-sm-12 col-md-12 message_style">
+                                    <h4 class="title_message"><%# Eval("name_contact")%></h4>
+                                    <p><%#Eval("message_contact")%></p>
+                                    <div class="info_message">                                  
+                                        <span class="glyphicon glyphicon-time"></span><%#Eval("Date_contact")%>&nbsp;&nbsp;
+                                        <span class="glyphicon glyphicon-envelope"></span><%#Eval("email_contact")%>
+
+                                    </div>
+                                </div>
+                            </ItemTemplate>
+                        </asp:repeater>
                     </div>
                     <div id="time3" class="tab-pane fade">
-                        <h3>Menu 3</h3>
-                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <asp:repeater id="Repeater01" runat="server">
+                            <ItemTemplate>
+                                <div class="col-sm-12 col-md-12 message_style">
+                                    <h4 class="title_message"><%# Eval("name_contact")%></h4>
+                                    <p><%#Eval("message_contact")%></p>
+                                    <div class="info_message">                                  
+                                        <span class="glyphicon glyphicon-time"></span><%#Eval("Date_contact")%>&nbsp;&nbsp;
+                                        <span class="glyphicon glyphicon-envelope"></span><%#Eval("email_contact")%>
+
+                                    </div>
+                                </div>
+                            </ItemTemplate>
+                        </asp:repeater>
                     </div>
                 </div>
             </div>
         </div>
 
     </section>
+
+
+    <!---------------location--------------->
+     <section class="sections about">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 id="Cantact" class="section-title"> Location</h2>
+                <div class="line"><span></span></div>
+
+            </div>
+            <!---------------------------------------------->
+
+            <div class="row container_map">
+                <div class="col-md-12 map col-xs-12 style="width: 100% !importan"t">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27183.41686948803!2d-7.968534435170939!3d31.60845702823989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdaff1d1f4459e43%3A0x810fc5827a35bcd3!2sRoyal%20Golf%20Marrakech!5e0!3m2!1sfr!2sma!4v1585570268638!5m2!1sfr!2sma" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+              
+            </div>
+        </section>
 </asp:Content>
 

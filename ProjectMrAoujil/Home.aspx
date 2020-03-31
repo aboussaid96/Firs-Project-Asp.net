@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="flipTimer/css/flipdown/flipdown.css" rel="stylesheet" />
@@ -34,16 +35,24 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#accueil">Golf Academy</a>
+                <a class="navbar-brand" href="Home.aspx">Golf Academy</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#accueil">Home</a></li>
-                    <li><a href="#About">About Us</a></li>
-                    <li><a href="#More_Info">More Info</a></li>
+                    <li><a href="Home.aspx">Home</a></li>
                     <li><a href="#Teams">Teams</a></li>
-                    <li><a href="#Sponsor">Sponsor</a></li>
-                    <li><a href="#Cantact">CONTACT</a></li>
+                    <li><a href="Schedule01.aspx">Schedule</a></li>
+                    <li><a href="Contact01.aspx">Contact</a></li>
+                    <li><a href="RegistrePage01.aspx" class="btn-success">Regester</a></li>
+                    <!--for launge-->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">launge
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu" style="background-color: black;color:white">
+                              <li><a href="#">Anglais </a></li>
+                              <li><a href="#">Francais</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -58,12 +67,13 @@
 
                 <div class="home-content">
 
-                    <h3 class="home-title">Morocco Champions Golf</h3>
+                    <h3 class="home-title">Morocco Golf Academy</h3>
                     <p class="lead home-desc">
                         Le Morocco Champions sera le deuxième tournoi de la saison 2020 du PGA Tour Champions. 
                         Il s’agira de la première épreuve de la formule stroke-play du PGA TOUR à être disputée sur le continent africain.
                       
                     </p>
+                    <h4 style="color:white;font-style:italic">Wee Are Coming Soon....</h4>
 
                     <button class="btn button">Start Now </button>
                     <button class="btn button">Découvrir </button>
@@ -207,7 +217,7 @@
                                     <h2>Jane Doe</h2>
                                     <p class="title_team">CEO & Founder</p>
                                     <p>.</p>
-                                    <p>example@example.com</p>
+                                    <p>Jane.Doe@example.com</p>
                                 </span>
 
                             </div>
@@ -222,7 +232,7 @@
                                     <h2>Mike Ross</h2>
                                     <p class="title_team">Art Director</p>
                                     <p>S.</p>
-                                    <p>example@example.com</p>
+                                    <p>Mike.ross@example.com</p>
                             </div>
                         </div>
                     </div>
@@ -234,7 +244,7 @@
                                 <h2>John Doe</h2>
                                 <p class="title_team">Designer</p>
                                 <p>S.</p>
-                                <p>example@example.com</p>
+                                <p>due.john@example.com</p>
 
                             </div>
                         </div>
@@ -294,7 +304,7 @@
 
             <div class="row container_map">
                 <div class="col-md-12 map col-xs-12 style="width: 100% !importan"t">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d112061.09262729759!2d77.208022!3d28.632485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x644e33bc3def0667!2sIndior+Tours+Pvt+Ltd.!5e0!3m2!1sen!2sus!4v1527779731123" width="100%" height="650px" frameborder="0" style="border: 0" allowfullscreen></iframe>
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27183.41686948803!2d-7.968534435170939!3d31.60845702823989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdaff1d1f4459e43%3A0x810fc5827a35bcd3!2sRoyal%20Golf%20Marrakech!5e0!3m2!1sfr!2sma!4v1585570268638!5m2!1sfr!2sma" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
                <%-- <div class="col-md-6 contact-form">
                     <h1 class="title">Contact Us</h1>
@@ -308,17 +318,10 @@
                     </form>
                 </div>--%>
             </div>
+        </section>
             <!---------------------------------------------->
             <!----footer---------------------------->
-            <%--<section class="footer_sec">
-                <footer class="container-fluid text-center">
-                    <a href="#myPage" title="To Top">
-                        <span class="glyphicon glyphicon-chevron-up"></span>
-                    </a>
-
-                    <p>© 2020 Copyright ABOUSSAID HABIBALLAH</p>
-                </footer>
-            </section>--%>
+           
             <!-- Footer -->
             <footer class="footer">
                 <div class="container">
@@ -364,7 +367,7 @@
 
 
         </div>
-    </section>
+    
     <!--script main--->
     <script src="js/main.js"></script>
 </body>

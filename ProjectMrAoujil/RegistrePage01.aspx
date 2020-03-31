@@ -55,6 +55,7 @@
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator_confirmepassword" runat="server" ErrorMessage="*" ControlToValidate="TextBox_confirpassword" ForeColor="#CC0000"></asp:RequiredFieldValidator>
                 <asp:CompareValidator ID="CompareValidatorpassword" runat="server" ErrorMessage="Password incorect" ControlToCompare="TextBox_password" ControlToValidate="TextBox_confirpassword" Display="Dynamic" ForeColor="#CC0000"></asp:CompareValidator>
 
+
             <div class="form-holder">
                 <span class="icon upload_icon glyphicon glyphicon-upload"></span>
                 <asp:FileUpload ID="FileUpload1" runat="server" CssClass="form-control" />
@@ -67,9 +68,9 @@
                
                 <asp:Label ID="labelerreur" runat="server" CssClass="erreurlabel" ></asp:Label>
                  <asp:Label ID="label1" runat="server" CssClass="erreurlabel" ></asp:Label>
-             </div>  
-           
-        </div>
+    </div>
+
+    </div>
     </div>
 </asp:Content>
 

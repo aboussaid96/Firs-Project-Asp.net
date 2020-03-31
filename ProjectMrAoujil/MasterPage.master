@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="flipTimer/css/flipdown/flipdown.css" rel="stylesheet" />
     <link href="HomeStyle.css" rel="stylesheet" />
@@ -35,16 +35,24 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#accueil">Golf Academy</a>
+                <a class="navbar-brand" href="Home.aspx">Golf Academy</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="Home.aspx">Home</a></li>
-                    <li><a href="RegistrePage01.aspx">Regester</a></li>
-                    <li><a href="#More_Info">More Info</a></li>
                     <li><a href="#Teams">Teams</a></li>
-                    <li><a href="#Sponsor">Sponsor</a></li>
-                    <li><a href="Contact01.aspx">CONTACT</a></li>
+                    <li><a href="Schedule01.aspx">Schedule</a></li>
+                    <li><a href="Contact01.aspx">Contact</a></li>
+                    <li><a href="RegistrePage01.aspx" class="btn-success">Regester</a></li>
+                    <!--for launge-->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">launge
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu" style="background-color: black;color:white">
+                              <li><a href="#">Anglais </a></li>
+                              <li><a href="#">Francais</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -58,11 +66,13 @@
             <div class="container">
                 <div class="home-content">
 
-                    <h3 class="home-title">Morocco Champions Golf</h3>
+                    <h3 class="home-title">Morocco Golf Academy</h3>
                     <p class="lead home-desc">
                         Le Morocco Champions sera le deuxième tournoi de la saison 2020 du PGA Tour Champions. 
                         Il s’agira de la première épreuve de la formule stroke-play du PGA TOUR à être disputée sur le continent africain.
                     </p>
+                    
+                    <h4> style="color:white;font-style:italic">Wee Are Coming Soon....</h4>
 
                     <%--<button class="btn button">Start Now </button>
                     <button class="btn button">Découvrir </button>--%>
@@ -134,5 +144,6 @@
                     </div>
                 </div>
             </footer>
+    <!--/footer--->
 </body>
 </html>

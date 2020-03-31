@@ -15,10 +15,17 @@ public partial class Schedule01 : System.Web.UI.Page
         Contact cn = new Contact();
 
         dttable29=cn.AfficherMessage("29/03/2020");
-
-        dttable30 = cn.AfficherMessage("30/03/2020");
         repeter29.DataSource = dttable29;
-        repeter29.DataBind();    
-       /*branch */
+        repeter29.DataBind();
+        /*lier repetaer 2 avec data source */
+        dttable30 = cn.AfficherMessage("30/03/2020");
+        Repeater30.DataSource = dttable30;
+        Repeater30.DataBind();
+
+        /*lier repetaer 2 avec data source */
+        dttable30 = cn.AfficherMessage("01/04/2020");
+        Repeater01.DataSource = dttable30;
+        Repeater01.DataBind();
+        /*branch */
     }
 }

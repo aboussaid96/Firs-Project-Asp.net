@@ -1,1 +1,21 @@
-﻿
+﻿.title_message {
+    background-color: aquamarine;
+    width: 100px;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+
+.message_style {
+    background-color: antiquewhite;
+    margin: 10px;
+}
+.info_message {
+    background-color: aliceblue;
+    padding-left: 3px;
+    margin-bottom: 3px;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    color: #fff;
+    background-color: #449d44;
+}
