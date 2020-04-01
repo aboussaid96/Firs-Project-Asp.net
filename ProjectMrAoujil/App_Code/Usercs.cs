@@ -106,6 +106,24 @@ public class Usercs
             return ds.Tables["user"];
        
     }
+    public DataTable showRecentRegestroment()
+    {
+        SqlDataAdapter da = new SqlDataAdapter(" select top 4 * from Registrations where Date_register=@date", _connection);
+        da.SelectCommand.Parameters.Add(new SqlParameter("@date", DateTime.Now.ToString("MM/dd/yyyy")));
+        DataSet ds = new DataSet();
+        da.Fill(ds, "user");
 
+        return ds.Tables["user"];
+    }
+
+    public DataTable showallRecentRegestroment()
+    {
+        SqlDataAdapter da = new SqlDataAdapter(" select  * from Registrations ", _connection);
+        
+        DataSet ds = new DataSet();
+        da.Fill(ds, "user");
+
+        return ds.Tables["user"];
+    }
 
 }

@@ -143,7 +143,7 @@
         </nav>
         <!--/. NAV TOP  -->
         <nav class="navbar-default navbar-side" role="navigation">
-            <div id="sideNav" href=""><i class="fa fa-caret-right"></i></div>
+            <div id="sideNav" href="#"><i class="fa fa-caret-right"></i></div>
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 
@@ -155,7 +155,7 @@
                         <a href="#"><i class="fa fa-sitemap"></i>Registrations<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="#">All Registrations</a>
+                                <a href="AllRegister.aspx">All Registrations</a>
                             </li>
                         </ul>
                     </li>
@@ -164,7 +164,7 @@
                         <a href="#"><i class="fa fa-sitemap"></i>Messages<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="#">All Message</a>
+                                <a href="AllMessage.aspx">All Message</a>
                             </li>
 
                         </ul>

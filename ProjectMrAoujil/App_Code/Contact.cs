@@ -71,4 +71,22 @@ public class Contact
         dtadapter.Fill(ds);
         return ds.Tables[0];
     }
+
+    public DataTable Afficher4Message()
+    {
+        SqlDataAdapter da = new SqlDataAdapter("select top 4* from Contact where Date_contact=@date", _connection);
+        da.SelectCommand.Parameters.Add(new SqlParameter("@date", DateTime.Now.ToString("MM/dd/yyyy")));
+        DataSet ds = new DataSet();
+        da.Fill(ds);
+        return ds.Tables[0];
+    }
+
+    public DataTable affichertousMessage()
+    {
+        SqlDataAdapter da = new SqlDataAdapter("select * from Contact ", _connection);
+       
+        DataSet ds = new DataSet();
+        da.Fill(ds);
+        return ds.Tables[0];
+    }
 }

@@ -5,9 +5,20 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="page-inner ">
+        <!----------------------->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">Dashboard <small>Summary of your App</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="AdminHome.aspx">Home</a></li>
+                    <li class="active">Data</li>
+                </ol>
+            </div>
+        </div>
         <!-- /. ROW  View et Nombre Visiteur -->
         <div class="row">
-            
+
             <div class="col-md-3 col-sm-12 col-xs-12">
                 <div class="panel panel-primary text-center no-boder bg-color-green">
                     <div class="panel-left pull-left green">
@@ -49,104 +60,86 @@
         </div>
 
     </div>
-      <!-- . PAGE Afficher Regester  -->
-                <div class="row">
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                               Recent Registrations
-                            </div>
-                            <div class="panel-body">
-                                <div class="list-group">
+    <!-- . PAGE Afficher Regester  -->
+    <div class="row">
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Recent Registrations
+                </div>
+                <div class="panel-body">
+                    <div class="list-group">
 
-                                    <a href="#" class="list-group-item">
+                        <%--<a href="#" class="list-group-item">
                                         <span class="badge">7 minutes ago</span>
                                         <i class="fa fa-fw fa-comment"></i> Commented on a post
                                     </a>
                                     <a href="#" class="list-group-item">
                                         <span class="badge">16 minutes ago</span>
                                         <i class="fa fa-fw fa-truck"></i> Order 392 shipped
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge">36 minutes ago</span>
-                                        <i class="fa fa-fw fa-globe"></i> Invoice 653 has paid
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge">1 hour ago</span>
-                                        <i class="fa fa-fw fa-user"></i> A new user has been added
-                                    </a>
-                                    <a href="#" class="list-group-item">
-                                        <span class="badge">1.23 hour ago</span>
-                                        <i class="fa fa-fw fa-user"></i> A new user has added
-                                    </a>
-                                   
-                                </div>
-                                <div class="text-right">
-                                    <a href="#">More Tasks <i class="fa fa-arrow-circle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                                    </a>--%>
+
+                        <asp:Repeater ID="Repeater_register" runat="server">
+                            <ItemTemplate>
+                                <a href="#" class="list-group-item">
+                                    <span class="badge"><%# Eval("Date_register")%></span>&nbsp;&nbsp;
+                                    <i class="glyphicon glyphicon-user"></i><%# Eval("fullName_register")%>
+                                </a>
+
+
+                            </ItemTemplate>
+                        </asp:Repeater>
 
                     </div>
-                    <!-- . /Afficher Regester et  Debut Table Message  -->
-                    <div class="col-md-8 col-sm-12 col-xs-12">
-
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                Recent Registrations
-                            </div> 
-                            <div class="panel-body">
-                                <div class="table-responsive">
-                                    <table class="table table-striped table-bordered table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>S No.</th>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
-                                                <th>User Name</th>
-                                                <th>Email ID.</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>John</td>
-                                                <td>Doe</td>
-                                                <td>John15482</td>
-                                                <td>name@site.com</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Kimsila</td>
-                                                <td>Marriye</td>
-                                                <td>Kim1425</td>
-                                                <td>name@site.com</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>Rossye</td>
-                                                <td>Nermal</td>
-                                                <td>Rossy1245</td>
-                                                <td>name@site.com</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>Richard</td>
-                                                <td>Orieal</td>
-                                                <td>Rich5685</td>
-                                                <td>name@site.com</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <div class="text-right">
-                                        <a href="#">More Tasks <i class="fa fa-arrow-circle-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div class="text-right">
+                        <a href="AllRegister.aspx">More Tasks <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
-                    <!--  fin Table Message  -->
-  
+                </div>
+            </div>
+
+        </div>
+        <!-- . /Afficher Regester et  Debut Table Message  -->
+        <div class="col-md-8 col-sm-12 col-xs-12">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Recent Registrations
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Login</th>
+                                    <th>Message</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <asp:Repeater ID="Repeater_message" runat="server">
+                                    <ItemTemplate>
+                                        <tr>
+                                            <td><%# Eval("name_contact")%></td>
+                                            <td><%# Eval("email_contact")%></td>
+                                            <td><%# Eval("message_contact")%></td>
+                                            <td><%# Eval("Date_contact")%></td>
+
+                                        </tr>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+
+
+                            </tbody>
+                        </table>
+                        <div class="text-right">
+                            <a href="AllMessage.aspx">More Tasks <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--  fin Table Message  -->
 </asp:Content>
 
