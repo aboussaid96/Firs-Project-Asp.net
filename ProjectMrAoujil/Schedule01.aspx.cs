@@ -10,6 +10,8 @@ public partial class Schedule01 : System.Web.UI.Page
     DataTable dttable29 = new DataTable();
     DataTable dttable30 = new DataTable();
     DataTable dttable01 = new DataTable();
+    DataTable dttable02 = new DataTable();
+  
     protected void Page_Load(object sender, EventArgs e)
     {
         Contact cn = new Contact();
@@ -23,9 +25,14 @@ public partial class Schedule01 : System.Web.UI.Page
         Repeater30.DataBind();
 
         /*lier repetaer 2 avec data source */
-        dttable30 = cn.AfficherMessage("01/04/2020");
-        Repeater01.DataSource = dttable30;
+        dttable01 = cn.AfficherMessage("01/04/2020");
+        Repeater01.DataSource = dttable01;
         Repeater01.DataBind();
         /*branch */
+
+        dttable02= cn.AfficherMessage("04/01/2020");
+        Repeater2.DataSource = dttable02;
+        Repeater2.DataBind();
+
     }
 }
